@@ -145,24 +145,24 @@ int main()
 
     do
     {
-        cout << "\n";
-        cout << "\n--- MENU ---\n";
-        cout << "1. Append (insert at end)\n";
-        cout << "2. Display\n";
-        cout << "3. Insert at beginning\n";
-        cout << "4. Search\n";
-        cout << "5. Delete\n";
-        cout << "6. Reverse\n";
-        cout << "7. Exit\n";
+        cout << "\n---- MENU ----" << endl;
+        cout << "1. Append (insert at end)" << endl;
+        cout << "2. Display" << endl;
+        cout << "3. Insert at Beginning" << endl;
+        cout << "4. Search" << endl;
+        cout << "5. Delete" << endl;
+        cout << "6. Reverse" << endl;
+        cout << "7. Exit" << endl;
+
         cout << "Enter choice: ";
         cin >> choice;
 
         switch (choice)
         {
         case 1:
-            cout << "Enter value: ";
+            cout << "Enter Value: ";
             cin >> value;
-            d.addAtEnd(value);
+            d.appEnd(value);
             break;
 
         case 2:
@@ -170,7 +170,7 @@ int main()
             break;
 
         case 3:
-            cout << "Enter value: ";
+            cout << "Enter Value: ";
             cin >> value;
             d.addAtBeg(value);
             break;
@@ -189,15 +189,16 @@ int main()
 
         case 6:
             d.reverse();
-            cout << "List reversed\n";
+            cout << "List Reversed" << endl;
             break;
 
         case 7:
-            cout << "Exiting...\n";
+            cout << "Exiting Program..." << endl;
             break;
 
         default:
-            cout << "Invalid choice\n";
+            cout << "Invalid choice" << endl;
+            break;
         }
 
     } while (choice != 7);
